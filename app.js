@@ -53,7 +53,7 @@ Solve Exercise 5 here:
 */
 
 
-game.party.splice(2, 0, pokemon[68], pokemon[135], pokemon[35]);
+game.party.push(pokemon[3], pokemon[6], pokemon[24]);
 
 /*
 Exercise 6
@@ -88,4 +88,28 @@ More Hints: The existing starter Pokemon will be *replaced* in your party with t
 Solve Exercise 7 here:
 */
 
-game.party.splice(1, 1, game.party[1]);
+game.party.splice(0, 1, pokemon[1]);
+game.party.splice(1, 1, pokemon[4]);
+game.party.splice(2, 1, pokemon[7]);
+game.party.splice(3, 1, pokemon[25]);
+
+/*
+Exercise 8
+1. Print the name of each Pokémon in your party.
+2. Consider using a loop or an array method to access each Pokémon's name.
+
+Solve Exercise 8 here:
+*/
+for (let i=0; i<4;i++){
+  console.log(game.party[i].name);
+}
+
+/*
+Exercise 9
+1. Can you print out all the starter Pokémon from the `pokemon` array?
+2. Think about how you can identify a starter Pokémon and then log their names.
+
+
+Solve Exercise 9 here:
+*/
+console.log()
